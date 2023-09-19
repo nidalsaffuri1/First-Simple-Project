@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.body {
+  width: 100%;
+  height: 100svh;
+  margin: 0;
+  display: grid;
+  grid-template: 9fr 0.7fr/ 1fr;
+  place-items: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: 1fr / 3fr 1fr;
+  place-items: center;
+}
+
+.themeText {
+  font-family: "Playfair Display", serif;
+  font-size: 6rem;
+  color: #feba33;
+  margin: 0;
+  position: relative;
+  bottom: 50px;
+}
+
+.theme {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/sea.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width: 100%;
+  height: 100%;
+  background: #feba33;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginText {
+  font-family: "ADLaM Display", cursive;
+  font-family: "Dosis", sans-serif;
+  font-family: "Merriweather", serif;
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
+  font-size: clamp(3rem, 5rem, 6rem);
+  margin-bottom: 0;
+}
+
+.Ptext {
+  font-size: large;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+label {
+  display: block;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Dosis", sans-serif;
+}
+
+.label1 {
+  margin-bottom: 1rem;
+  position: relative;
+  right: 3px;
+}
+
+input {
+  height: 1.5rem;
+  display: inline-block;
+  border-radius: 0.8rem;
+}
+
+.btn{
+  margin-top: 5rem;
+  position: relative;
+  left: 30px;
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 0.9rem;
+  border-color: transparent;
+  background: #E5E5E5;
+  display: grid;
+  place-items: center;
+}
+
+.btn:hover{
+  box-shadow: 0 0 20px 0 white;
+}
+
+.loginref{
+  color: black;
+  font-size: medium;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid white;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: black;
+}
+
+.pfoot{
+  color: white;
+}
+
+.afoot:visited{
+  color: white;
+}

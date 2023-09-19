@@ -1,0 +1,325 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*This Is The HEADER*/
+header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeaderContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #31435e;
+  border-top: solid 0.4em white;
+  position: relative;
+}
+
+.Brandname {
+  display: inline-block;
+  font-size: 2em;
+  position: absolute;
+  left: 3.5em;
+  bottom: 0px;
+  font-family: "Merriweather", serif;
+  clear: both;
+  color: white;
+}
+
+.navOptions {
+  float: right;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.navOptions a:link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 5em;
+  width: 5em;
+  height: 2em;
+  background-color: #141d2b;
+  text-decoration: none;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+.navOptions a:link:hover {
+  box-shadow: 0 0 10px 0 white;
+}
+
+/*This Is The Main*/
+
+article {
+  width: 100%;
+  height: 100%;
+  background-color: #141d2b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: 1fr / 0.9fr 3fr 1fr;
+}
+
+/*This Is The Left Side*/
+
+.leftSideBAR {
+  display: grid;
+  place-items: center;
+  grid-template: 1fr / 1fr;
+  position: relative;
+}
+
+.leftBody {
+  width: 20em;
+  height: 60%;
+  position: absolute;
+  bottom: 1.5em;
+  background-color: #111927;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  margin-bottom: 41em;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 60%) 0%,
+    rgba(0, 255, 0, 60%) 50%,
+    rgba(0, 0, 255, 60%) 100%
+  );
+  border-radius: 50%;
+}
+.leftBody a:link {
+  display: block;
+  width: 80%;
+  height: 2em;
+  background-color: greenyellow;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+
+.options {
+  width: 80%;
+  height: 2em;
+  background-color: greenyellow;
+  display: grid;
+  place-items: center;
+}
+
+.leftBody a:link:hover {
+  box-shadow: 0 0 10px 0 white;
+}
+
+.leftBody span {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.7em;
+  color: black;
+}
+
+.RoadMap {
+  text-decoration: underline dotted black;
+  margin-top: 1px;
+}
+.Courses,
+.Practice {
+  text-decoration: underline dotted black;
+  margin-top: 2px;
+}
+
+/*This Is The Main Body*/
+
+.MainBAR {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  place-items: center;
+  row-gap: 2em;
+  /* background-color: blue; */
+}
+
+.box {
+  width: 15em;
+  height: 20em;
+  margin: 2em auto;
+  /* background: linear-gradient(
+    to bottom,
+    rgba(255, 0, 255, 100%) 0%,
+    rgba(255, 255, 0, 100%) 60%
+  ); */
+  border-radius: 2em;
+  overflow: hidden;
+  border: solid 3px white;
+}
+
+.img {
+  width: 100%;
+  height: 40%;
+  background-image: url(/images/sea.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: solid 3px black;
+}
+
+.box:hover {
+  box-shadow: 0px 0px 20px 5px black;
+  border: unset;
+}
+
+.box h1 {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: greenyellow;
+  text-decoration: underline wavy;
+  margin-bottom: 1.5em;
+}
+
+.boxLorem {
+  margin: auto 2em;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-style: italic;
+  color: greenyellow;
+}
+
+/*This Is The Right Side*/
+
+.RightSideBAR {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111927;
+  position: sticky;
+  top: 0;
+}
+
+.item {
+  background-color: #141d2b;
+  margin-top: 5em;
+}
+
+.item1 {
+  width: 23em;
+  height: 13em;
+  position: sticky;
+  top: 0;
+}
+
+.item2 {
+  width: 23em;
+  height: 9em;
+}
+
+.item3 {
+  width: 23em;
+  height: 9em;
+}
+
+.Updatelist li {
+  padding-top: 1em;
+}
+
+.Updatelist li a {
+  color: white;
+}
+
+.Updatelist li a:hover {
+  font-style: italic;
+  color: greenyellow;
+}
+
+.Updatelist li a:active {
+  font-style: italic;
+  color: purple;
+}
+
+.item1 h1 {
+  position: relative;
+  left: 1em;
+  bottom: 0.2em;
+  font-size: 2.5em;
+  color: orange;
+}
+
+.item2 h2 {
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+  color: greenyellow;
+}
+
+.subBTN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item2 a {
+  color: #111927;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 80%;
+  height: 1.5em;
+  background-color: greenyellow;
+  font-weight: bold;
+  border-radius: 1em;
+}
+
+.quote {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote q {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  color: darkgreen;
+}
